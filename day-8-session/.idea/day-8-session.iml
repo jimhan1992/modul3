@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/session-login-logout/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/session-login-logout/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/session-login-logout/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/session-login-logout/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/filp/whoops" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/asm89/stack-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/brick/math" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/opis/closure" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/voku/portable-ascii" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/facade/ignition-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/nette/utils" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/nette/schema" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/league/mime-type-detection" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/league/config" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/facade/flare-client-php" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/facade/ignition" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/nesbot/carbon" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/ramsey/collection" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/league/commonmark" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/dflydev/dot-access-data" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/ramsey/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/laravel/sail" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/laravel/sanctum" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/laravel/serializable-closure" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/mockery/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/phpspec/prophecy" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/phpunit/php-invoker" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/error-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/translation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/polyfill-php73" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/polyfill-php81" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/http-client-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/polyfill-intl-normalizer" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/polyfill-intl-grapheme" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/string" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/polyfill-php72" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/polyfill-iconv" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/symfony/mime" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/fruitcake/laravel-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/fakerphp/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/sebastian/resource-operations" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/phpoption/phpoption" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/sebastian/object-enumerator" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/sebastian/object-reflector" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/sebastian/lines-of-code" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/sebastian/type" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/sebastian/code-unit" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/sebastian/cli-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/sebastian/complexity" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/sebastian/code-unit-reverse-lookup" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/nunomaduro/collision" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/swiftmailer/swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/tijsverkoyen/css-to-inline-styles" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/dragonmantank/cron-expression" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/graham-campbell/result-type" />
+      <excludeFolder url="file://$MODULE_DIR$/session-login-logout/vendor/psr/event-dispatcher" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
