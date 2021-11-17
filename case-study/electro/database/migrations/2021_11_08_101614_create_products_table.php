@@ -17,8 +17,8 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->string('name',200);
             $table->string('image',200);
-            $table->float('price',9,3);
-            $table->float('sale_price',9,3)->default('0');
+            $table->float('price');
+            $table->float('sale_price')->default('0');
             $table->text('description');
             $table->text('image_list');
             $table->tinyInteger('status')->default(1)->comment('1 là hiển thị, 0 ẩn');
