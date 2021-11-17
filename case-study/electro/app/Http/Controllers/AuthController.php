@@ -18,7 +18,10 @@ class AuthController extends Controller
             'password' => $password
         ];
         if (Auth::attempt($data)) {
-            return redirect()->route('users.index');
+            if(Auth::user()->role == "Admin"){
+                return redirect()->route('dashboard');
+            }
+            return redirect()->route('home');
         } else {
             Session::flash('errorLogin', 'tai email hoac mat khau ko dung');
             return redirect()->route('login');

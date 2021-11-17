@@ -1,10 +1,12 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -44,7 +46,7 @@ Route::middleware('auth')->group(function () {
         Route::get('logout', [AuthController::class, 'logout'])->name('logout');
         Route::get('/', function () {
             return view('admin.dashboard');
-        });
+        })->name('dashboard');
 
         //user
         Route::group(['prefix' => 'users'], function () {
@@ -66,7 +68,17 @@ Route::middleware('auth')->group(function () {
             Route::get('delete/{id}', [ProductController::class, 'destroy'])->name('products.destroy');
 
         });
+        //category
+        Route::group(['prefix' => 'category'], function () {
+            Route::get('/', [CategoryController::class, 'index'])->name('category.index');
+            Route::get('create', [CategoryController::class, 'create'])->name('category.create');
+            Route::post('create', [CategoryController::class, 'store'])->name('category.store');
+            Route::get('edit/{id}', [CategoryController::class, 'edit'])->name('category.edit');
+            Route::post('edit/{id}', [CategoryController::class, 'update'])->name('category.update');
+            Route::get('delete/{id}', [CategoryController::class, 'destroy'])->name('category.destroy');
+
+        });
     });
 });
-Route::get('/',[ProductController::class , 'listAll']);
+Route::get('/',[ProductController::class , 'listAll'])->name('home');
 Route::get('/product/detail/{id}',[ProductController::class , 'show'])->name('detail');

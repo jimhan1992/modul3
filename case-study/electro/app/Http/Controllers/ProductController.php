@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ProductRequest;
 use App\Models\CatergoryModel;
 use App\Models\ProductModel;
 use Illuminate\Http\Request;
@@ -29,7 +30,7 @@ class ProductController extends Controller
     }
 
 
-    public function store(Request $request)
+    public function store(ProductRequest $request)
     {
         $product = new ProductModel();
         $product->name = $request->name;
