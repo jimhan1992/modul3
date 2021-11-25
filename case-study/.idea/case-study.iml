@@ -120,6 +120,8 @@
       <excludeFolder url="file://$MODULE_DIR$/electro/vendor/phpunit/php-text-template" />
       <excludeFolder url="file://$MODULE_DIR$/electro/vendor/phar-io/manifest" />
       <excludeFolder url="file://$MODULE_DIR$/electro/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/electro/vendor/league/oauth1-client" />
+      <excludeFolder url="file://$MODULE_DIR$/electro/vendor/laravel/socialite" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

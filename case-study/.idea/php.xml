@@ -114,6 +114,8 @@
       <path value="$PROJECT_DIR$/electro/vendor/phpunit/php-text-template" />
       <path value="$PROJECT_DIR$/electro/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/electro/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/electro/vendor/league/oauth1-client" />
+      <path value="$PROJECT_DIR$/electro/vendor/laravel/socialite" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3">

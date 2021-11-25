@@ -13,7 +13,7 @@ class ShopController extends Controller
 
     public function index()
     {
-        $shops = Shop::paginate(10);
+        $shops = Shop::paginate(5);
         return view('shops.list', compact('shops'));
     }
 

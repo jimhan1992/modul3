@@ -1,9 +1,13 @@
 <?php
 
+use App\Http\Controllers\aCartController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\GoogleController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
@@ -40,13 +44,21 @@ Route::post('reset-password', [ForgotPasswordController::class, 'submitResetPass
 Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('google.login');
 Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback'])->name('google.callback');
 
-//admin
+//Auth
 Route::middleware('auth')->group(function () {
-    Route::group(['prefix' => 'admin'], function () {
-        Route::get('logout', [AuthController::class, 'logout'])->name('logout');
-        Route::get('/', function () {
-            return view('admin.dashboard');
-        })->name('dashboard');
+    //Order
+    Route::get('/checkout',[HomeController::class , 'checkout'])->name('checkout');
+    Route::post('/checkout',[OrderController::class , 'create'])->name('order');
+    Route::get('view-cart', [HomeController::class, 'viewcart'])->name('view-cart');
+    Route::post('view-cart', [HomeController::class, 'update'])->name('update.cart');
+    Route::get('add-to-cart/{id}', [HomeController::class, 'addToCart'])->name('add.to.cart');
+    Route::get('remove-from-cart/{id}', [HomeController::class, 'remove'])->name('remove.from.cart');
+    Route::get('profile/{id}', [HomeController::class, 'profile'])->name('profile');
+    Route::post('profile/{id}', [HomeController::class, 'updateProfile'])->name('update_profile');
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+        Route::get('/', [OrderController::class,'count'])->name('dashboard');
 
         //user
         Route::group(['prefix' => 'users'], function () {
@@ -56,6 +68,7 @@ Route::middleware('auth')->group(function () {
             Route::get('edit/{id}', [UserController::class, 'edit'])->name('users.edit');
             Route::post('edit/{id}', [UserController::class, 'update'])->name('users.update');
             Route::get('delete/{id}', [UserController::class, 'destroy'])->name('users.destroy');
+            Route::get('profile/{id}', [UserController::class, 'show'])->name('users.profile');
 
         });
         //product
@@ -78,7 +91,32 @@ Route::middleware('auth')->group(function () {
             Route::get('delete/{id}', [CategoryController::class, 'destroy'])->name('category.destroy');
 
         });
+        //Order
+        Route::group(['prefix'=>'orders'],function (){
+            Route::get('/',[OrderController::class , 'index'])->name('orders.index');
+            Route::get('{id}/detail',[OrderController::class , 'show'])->name('orders.detail');
+
+        });
     });
 });
-Route::get('/',[ProductController::class , 'listAll'])->name('home');
+
 Route::get('/product/detail/{id}',[ProductController::class , 'show'])->name('detail');
+
+
+
+///cart
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('cart', [HomeController::class, 'cart'])->name('cart');
+
+
+
+//search
+Route::get('/q',[HomeController::class ,'search'])->name('search.category');
+Route::get('category/hot-deals',[HomeController::class ,'searchCategory'])->name('hot-deals');
+Route::get('category/laptops',[HomeController::class ,'searchCategory'])->name('laptops');
+Route::get('category/smartphones',[HomeController::class ,'searchCategory'])->name('smartphones');
+Route::get('category/cameras',[HomeController::class ,'searchCategory'])->name('cameras');
+Route::get('category/accessories',[HomeController::class ,'searchCategory'])->name('accessories');
+
+
+

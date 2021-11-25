@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8dd6145-03e8-4224-891b-d51896f87f41" name="Changes" comment="" />
+    <list default="true" id="b8dd6145-03e8-4224-891b-d51896f87f41" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.phpintel/index" beforeDir="false" afterPath="$PROJECT_DIR$/.phpintel/index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case-study/electro/app/Http/Controllers/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/case-study/electro/app/Http/Controllers/AccountController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case-study/electro/resources/views/layout/site.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/case-study/electro/resources/views/layout/site.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case-study/electro/resources/views/site/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/case-study/electro/resources/views/site/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case-study/electro/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/case-study/electro/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-2/bt-task_manager/task_manager" beforeDir="false" afterPath="$PROJECT_DIR$/day-2/bt-task_manager/task_manager" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-2/bt-task_manager/task_manager/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-2/bt-task_manager/task_manager/.idea/commandlinetools/Laravel_3_2_21__11_17_PM.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-2/bt-task_manager/task_manager/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-2/bt-task_manager/task_manager/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-2/bt-task_manager/task_manager/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-2/bt-task_manager/task_manager/.idea/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-2/bt-task_manager/task_manager/.idea/task_manager.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-2/bt-task_manager/task_manager/resources/views/modules/customer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/day-2/bt-task_manager/task_manager/resources/views/modules/customer/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-2/bt-task_manager/task_manager/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/day-2/bt-task_manager/task_manager/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-3/bt-task-manager-p4/task_manager" beforeDir="false" afterPath="$PROJECT_DIR$/day-3/bt-task-manager-p4/task_manager" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-3/bt-task-manager-p4/task_manager/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/day-3/bt-task-manager-p4/task_manager/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-3/th-tao-controller-task-manager/task_manager" beforeDir="false" afterPath="$PROJECT_DIR$/day-3/th-tao-controller-task-manager/task_manager" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-3/th-tao-controller-task-manager/task_manager/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-3/th-tao-controller-task-manager/task_manager/.idea/commandlinetools/Laravel_3_2_21__11_17_PM.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-3/th-tao-controller-task-manager/task_manager/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-3/th-tao-controller-task-manager/task_manager/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-3/th-tao-controller-task-manager/task_manager/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-3/th-tao-controller-task-manager/task_manager/.idea/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-3/th-tao-controller-task-manager/task_manager/.idea/task_manager.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-3/th-tao-controller-task-manager/task_manager/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/day-3/th-tao-controller-task-manager/task_manager/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +41,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="20AyFaEaXE6bA0IBgJHpihYM0sU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -22,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day-2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pvl/C0821H2-demo-laravel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -34,7 +62,11 @@
       <option name="presentableId" value="Default" />
       <updated>1635501583791</updated>
       <workItem from="1635501586867" duration="18000" />
+      <workItem from="1636605366000" duration="340000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

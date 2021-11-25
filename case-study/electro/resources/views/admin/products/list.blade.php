@@ -1,5 +1,14 @@
 @extends('layout.admin')
 @section('main')
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Product</h1>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
@@ -41,7 +50,8 @@
 
                                     <td>
                                         @can('crud_user')
-                                            <a href="{{route('products.edit',$product->id)}}" class="btn btn-outline-warning"><i
+                                            <a href="{{route('products.edit',$product->id)}}"
+                                               class="btn btn-outline-warning"><i
                                                     class="fa fa-edit"></i></a>
                                             <a href="{{route('products.destroy',$product->id)}}"
                                                class="btn btn-outline-danger" onclick="return confirm('ok')"><i

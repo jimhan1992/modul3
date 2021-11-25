@@ -19,11 +19,11 @@ class CreateOrdersTable extends Migration
             $table->string('email',100)->nullable();
             $table->string('phone',100)->nullable();
             $table->string('address',255)->nullable();
-            $table->text('note');
+            $table->text('note')->nullable();
             $table->tinyInteger('status')->default(1)->comment('1 là hiển th,ị 0 ẩn');
-            $table->unsignedBigInteger('account_id');
+            $table->unsignedBigInteger('user_id');
             $table->timestamps();
-            $table->foreign('account_id')->references('id')->on('accounts');
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

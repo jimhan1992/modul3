@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/day-2/bt-task_manager/task_manager" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/day-3/bt-task-manager-p4/task_manager" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/day-3/th-tao-controller-task-manager/task_manager" vcs="Git" />
   </component>
 </project>

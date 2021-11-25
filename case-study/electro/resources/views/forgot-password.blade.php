@@ -16,6 +16,9 @@
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
+    <div class="login-logo">
+        <img src="{{asset('site/img/logo.png')}}" alt="">
+    </div>
     <!-- /.login-logo -->
     <div class="card">
         @if (Session::has('message'))

@@ -19,9 +19,9 @@ class AuthController extends Controller
         ];
         if (Auth::attempt($data)) {
             if(Auth::user()->role == "Admin"){
-                return redirect()->route('dashboard');
+                return redirect()->route('dashboard')->with('success', 'Login successfully!');
             }
-            return redirect()->route('home');
+            return redirect()->route('home')->with('success', 'Login successfully!');
         } else {
             Session::flash('errorLogin', 'tai email hoac mat khau ko dung');
             return redirect()->route('login');
@@ -31,6 +31,6 @@ class AuthController extends Controller
     public function logout()
     {
         Auth::logout();
-        return redirect('login');
+        return redirect()->route('home');
     }
 }

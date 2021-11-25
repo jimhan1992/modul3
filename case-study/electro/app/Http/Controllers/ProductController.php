@@ -6,6 +6,7 @@ use App\Http\Requests\ProductRequest;
 use App\Models\CatergoryModel;
 use App\Models\ProductModel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class ProductController extends Controller
 {
@@ -44,14 +45,15 @@ class ProductController extends Controller
         $product->image_list = 'dsfsd';
         $product->category_id = $request->category_id;
         $product->save();
-        return redirect()->route('products.index');
+        return redirect()->route('products.index')->with('success', 'Add product successfully!');
     }
 
 
     public function show($id)
     {
+        $oldCart = Session::get('cart');
         $product = ProductModel::findOrFail($id);
-        return view('site.show',compact('product'));
+        return view('site.show',compact('product','oldCart'));
     }
 
 
@@ -76,7 +78,7 @@ class ProductController extends Controller
         $product->description = $request->description;
         $product->category_id = $request->category_id;
         $product->save();
-        return redirect()->route('products.index');
+        return redirect()->route('products.index')->with('success', 'Update successfully!');
     }
 
 
@@ -84,7 +86,7 @@ class ProductController extends Controller
     {
         $product = ProductModel::findOrFail($id);
         $product->delete();
-        return redirect()->route('products.index');
+        return redirect()->route('products.index')->with('success', 'Delete successfully!');
     }
 
 }

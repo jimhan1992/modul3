@@ -22,12 +22,15 @@ class GoogleController extends Controller
             $finduser= User::where('google_id',$userGG->id)->first();
             if($finduser){
                 Auth::login($finduser);
-                return redirect()->route('users.index');
+                if(Auth::user()->role == "Admin"){
+                    return redirect()->route('dashboard')->with('success', 'Login successfully!');
+                }
+                return redirect()->route('home')->with('success', 'Login successfully!');
             }else{
                 $newUser=new User();
                 $newUser->name = $userGG->name;
                 $newUser->email = $userGG->email;
-                $newUser->password = Hash::make(rand(1,10));
+                $newUser->password = Hash::make('123456');
                 $newUser->phone = '12563';
                 $newUser->google_id = $userGG->id;
                 $newUser->address = 'hn';
@@ -35,7 +38,7 @@ class GoogleController extends Controller
                 $newUser->status = '1';
                 $newUser->save();
                 Auth::login($newUser);
-                return redirect()->route('users.index');
+                return redirect()->route('home')->with('success', 'successfully!');
             }
         }catch (Exception $e){
 

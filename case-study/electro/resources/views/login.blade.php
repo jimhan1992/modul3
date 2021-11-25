@@ -20,9 +20,14 @@
     <link rel="stylesheet" href="{{asset('admin1/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{asset('admin1/dist/css/adminlte.min.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
+    <div class="login-logo">
+        <img src="{{asset('site/img/logo.png')}}" alt="">
+    </div>
     <!-- /.login-logo -->
     <div class="card">
         <div class="card-body login-card-body">
@@ -70,9 +75,9 @@
 
             <div class="social-auth-links text-center mb-3">
                 <p>- OR -</p>
-                <a href="#" class="btn btn-block btn-primary">
-                    <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
-                </a>
+{{--                <a href="#" class="btn btn-block btn-primary">--}}
+{{--                    <i class="fab fa-facebook mr-2"></i> Sign in using Facebook--}}
+{{--                </a>--}}
                 <a href="{{route('google.login')}}" class="btn btn-block btn-danger">
                     <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
                 </a>
@@ -97,5 +102,11 @@
 <script src="{{asset('admin1/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('admin1/dist/js/adminlte.min.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+@if(Session::has('success'))
+    <script>
+        toastr.success("{!! Session::get('success') !!}")
+    </script>
+@endif
 </body>
 </html>

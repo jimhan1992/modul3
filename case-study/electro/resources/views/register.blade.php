@@ -6,18 +6,22 @@
     <title>AdminLTE 3 | Log in</title>
 
     <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{asset('admin1/plugins/fontawesome-free/css/all.min.css')}}">
     <!-- icheck bootstrap -->
     <link rel="stylesheet" href="{{asset('admin1/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{asset('admin1/dist/css/adminlte.min.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
 </head>
 <body class="hold-transition login-page">
 <div class="register-box">
-
-
+    <div class="login-logo">
+        <img src="{{asset('site/img/logo.png')}}" alt="">
+    </div>
     <div class="card">
         <div class="card-body register-card-body">
             <p class="login-box-msg">Register a new membership</p>
@@ -109,10 +113,10 @@
 
             <div class="social-auth-links text-center">
                 <p>- OR -</p>
-{{--                <a href="#" class="btn btn-block btn-primary">--}}
-{{--                    <i class="fab fa-facebook mr-2"></i>--}}
-{{--                    Sign up using Facebook--}}
-{{--                </a>--}}
+                {{--                <a href="#" class="btn btn-block btn-primary">--}}
+                {{--                    <i class="fab fa-facebook mr-2"></i>--}}
+                {{--                    Sign up using Facebook--}}
+                {{--                </a>--}}
                 <a href="{{route('google.login')}}" class="btn btn-block btn-danger">
                     <i class="fab fa-google-plus mr-2"></i>
                     Sign up using Google+
@@ -132,5 +136,11 @@
 <script src="{{asset('admin1/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('admin1/dist/js/adminlte.min.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+@if(Session::has('success'))
+    <script>
+        toastr.success("{!! Session::get('success') !!}")
+    </script>
+@endif
 </body>
 </html>

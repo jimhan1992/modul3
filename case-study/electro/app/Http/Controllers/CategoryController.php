@@ -30,7 +30,7 @@ class CategoryController extends Controller
         $category->status ='1';
         $category->prioty ='0';
         $category->save();
-        return redirect()->route('category.index');
+        return redirect()->route('category.index')->with('success', 'Add category successfully!');
     }
 
 
@@ -52,7 +52,7 @@ class CategoryController extends Controller
         $category = CatergoryModel::findOrFail($id);
         $category->name = $request->name;
         $category->save();
-        return redirect()->route('category.index');
+        return redirect()->route('category.index')->with('success', 'Update successfully!');
     }
 
 
@@ -60,6 +60,7 @@ class CategoryController extends Controller
     {
         ProductModel::where("category_id",$id)->update(["category_id"=>1]);
         CatergoryModel::findOrFail($id)->delete();
-        return redirect()->route('category.index');
+        return redirect()->route('category.index')->with('success', 'Delete successfully!');
     }
+
 }

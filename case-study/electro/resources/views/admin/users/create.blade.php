@@ -1,5 +1,15 @@
 @extends('layout.admin')
 @section('main')
+
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Users</h1>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
@@ -17,7 +27,7 @@
                             </button>
                         </div>
                     </div>
-                    <form action="" method="post">
+                    <form action="{{route('users.store')}}" method="post">
                         @csrf
                         <div class="card-body">
                             <div class="form-group">

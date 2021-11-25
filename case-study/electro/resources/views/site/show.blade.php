@@ -1,5 +1,12 @@
-@extends('layout.site')
-@section('main')
+@include('site.core.head')
+<!-- HEADER -->
+@include('site.core.header')
+<!-- /HEADER -->
+
+<!-- NAVIGATION -->
+@include('site.core.nav')
+<!-- /NAVIGATION -->
+
     <!-- SECTION -->
     <div class="section">
         <!-- container -->
@@ -65,7 +72,9 @@
                             <a class="review-link" href="#">10 Review(s) | Add your review</a>
                         </div>
                         <div>
-                            <h3 class="product-price">${{$product->sale_price}} <del class="product-old-price">${{$product->price}}</del></h3>
+                            <h3 class="product-price">${{$product->sale_price}}
+                                <del class="product-old-price">${{$product->price}}</del>
+                            </h3>
                             <span class="product-available">In Stock</span>
                         </div>
                         <div class="add-to-cart">
@@ -77,12 +86,14 @@
                                     <span class="qty-down">-</span>
                                 </div>
                             </div>
-                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                            <a href="{{route('add.to.cart',$product->id)}}">
+                                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                            </a>
                         </div>
 
                         <ul class="product-links">
                             <li>Category:</li>
-                            <li><a href="{{$product->category->name}}">{{$product->category->name}}</a></li>
+                            <li><a href="">{{$product->category->name}}</a></li>
                         </ul>
 
                         <ul class="product-links">
@@ -116,7 +127,6 @@
                                     <div class="col-md-12">
 
 
-
                                         {!! $product->description !!}
 
 
@@ -129,7 +139,13 @@
                             <div id="tab2" class="tab-pane fade in">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                            non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                            laborum.</p>
                                     </div>
                                 </div>
                             </div>
@@ -239,7 +255,9 @@
                                                         </div>
                                                     </div>
                                                     <div class="review-body">
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua</p>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -255,7 +273,9 @@
                                                         </div>
                                                     </div>
                                                     <div class="review-body">
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua</p>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -271,7 +291,9 @@
                                                         </div>
                                                     </div>
                                                     <div class="review-body">
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua</p>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -296,11 +318,16 @@
                                                 <div class="input-rating">
                                                     <span>Your Rating: </span>
                                                     <div class="stars">
-                                                        <input id="star5" name="rating" value="5" type="radio"><label for="star5"></label>
-                                                        <input id="star4" name="rating" value="4" type="radio"><label for="star4"></label>
-                                                        <input id="star3" name="rating" value="3" type="radio"><label for="star3"></label>
-                                                        <input id="star2" name="rating" value="2" type="radio"><label for="star2"></label>
-                                                        <input id="star1" name="rating" value="1" type="radio"><label for="star1"></label>
+                                                        <input id="star5" name="rating" value="5" type="radio"><label
+                                                            for="star5"></label>
+                                                        <input id="star4" name="rating" value="4" type="radio"><label
+                                                            for="star4"></label>
+                                                        <input id="star3" name="rating" value="3" type="radio"><label
+                                                            for="star3"></label>
+                                                        <input id="star2" name="rating" value="2" type="radio"><label
+                                                            for="star2"></label>
+                                                        <input id="star1" name="rating" value="1" type="radio"><label
+                                                            for="star1"></label>
                                                     </div>
                                                 </div>
                                                 <button class="primary-btn">Submit</button>
@@ -323,4 +350,5 @@
     </div>
     <!-- /SECTION -->
 
-@endsection
+<!-- FOOTER -->
+@include('site.core.footer')
